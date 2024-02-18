@@ -1,0 +1,7 @@
+<h1>Dawn of wars</h1>
+<ul>
+  {% for build in object_list %}
+    <h2>{{ build.hero_name }}</h2>
+    <img src="{{ build.build_image.url }}" alt="{{ build.hero_name }}">
+  {% endfor %}
+</ul>
